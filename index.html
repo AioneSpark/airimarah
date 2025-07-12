@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>airimarah-travels</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logofooter.png" type="image/png" />
+
+    <!-- ✅ Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ✅ Font Awesome 6 (for all social/brand icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- ✅ Animate.css -->
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <!-- ✅ Owl Carousel from CDN (cleaner & updated) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- ✅ Other UI Plugins -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+
+    <!-- ✅ Custom Styles -->
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Hero section start -->
+
+    <!-- Transparent Header -->
+    <header
+      class="position-absolute top-0 start-0 w-100 z-3 py-3 px-4 d-flex justify-content-between align-items-center"
+      style="background: rgba(0, 0, 0, 0.01)"
+    >
+      <!-- Logo + Location -->
+      <div class="d-flex align-items-center gap-1 me-5">
+        <a href="#" class="brand">
+          <img
+            src="images/logo.png"
+            alt="Brand Logo"
+            style="height: 60px; width: auto"
+          />
+        </a>
+        <div class="header-location text-white small">
+          <strong>Air Imarah Tourism LLC</strong><br />
+          Dubai | India
+        </div>
+      </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Hero Section -->
+    <section class="home">
+      <!-- Background Videos -->
+      <video
+        class="video-slide active"
+        src="videos/plain.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <video
+        class="video-slide"
+        src="videos/beach.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <video
+        class="video-slide"
+        src="videos/road4.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <video
+        class="video-slide"
+        src="videos/cityy.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+
+      <!-- Content Slides -->
+      <div class="content-slide active">
+        <h1>Majestic.<br /><span>Adventure Highlands</span></h1>
+        <p>
+          Rise above the clouds and breathe the purity of untouched skies as
+          nature's grandest canvas unfolds before you.
+        </p>
+        <a href="destination.html" class="btn">Ascend Today</a>
+      </div>
+
+      <div class="content-slide">
+        <h1>Serenity.<br /><span>Tranquil By the Sea</span></h1>
+        <p>
+          Let waves kiss your feet and the breeze carry your worries away on
+          untouched, tranquil beaches.
+        </p>
+        <a href="destination.html" class="btn">Start Your Journey</a>
+      </div>
+
+      <div class="content-slide">
+        <h1>Picturesque.<br /><span>Nature's Serene Escapes</span></h1>
+        <p>
+          Wander through lush forests, tranquil lakes, and sun-dappled trails
+          where every step brings you closer to the heart of nature.
+        </p>
+        <a href="destination.html" class="btn">Start Exploring</a>
+      </div>
+
+      <div class="content-slide">
+        <h1>Vibrant.<br /><span> Radiance Twilight Lights</span></h1>
+        <p>
+          Dive into a city alive with neon lights, bustling markets, and endless
+          energy that ignites your spirit.
+        </p>
+        <a href="#" class="btn">Explore the City</a>
+      </div>
+
+      <!-- Plane Button -->
+      <div class="plane-container" onclick="triggerPlaneAndSlide()">
+        <div class="jet-line"></div>
+        <img
+          src="images/plain.png"
+          alt="Plane"
+          class="plane"
+          draggable="false"
+        />
+        <span class="plane-label">
+          <span class="text-desktop">Click to Fly ✈</span>
+          <span class="text-mobile" style="font-size: 11px"
+            >Click to Fly ✈</span
+          >
+        </span>
+      </div>
+      <!-- Social Icons -->
+      <div class="media-icons">
+        <!-- Facebook -->
+        <a
+          href="https://facebook.com/airimarah/"
+          class="facebook"
+          target="_blank"
+          title="Facebook"
+        >
+          <i class="fab fa-facebook-f fa-lg" style="font-size: 20px"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a
+          href="https://www.instagram.com/airimarah/"
+          class="instagram"
+          target="_blank"
+          title="Instagram"
+        >
+          <i class="fab fa-instagram fa-lg" style="font-size: 20px"></i>
+        </a>
+
+        <!-- LinkedIn (SVG icon) -->
+        <a
+          href="https://ae.linkedin.com/in/air-imarah-tourism-llc-74a6b7369"
+          class="linkedin"
+          target="_blank"
+          title="LinkedIn"
+        >
+          <i class="fab fa-linkedin-in" style="font-size: 20px"></i>
+        </a>
+
+        <!-- Call (SVG icon) -->
+        <a href="tel:+971503303771" class="call" target="_blank" title="Call">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-phone"
+          >
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2A19.86 19.86 0 0 1 
+               3.09 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72 
+               12.05 12.05 0 0 0 .57 2.57 2 2 0 0 1-.45 
+               2.11l-1.27 1.27a16 16 0 0 0 6.01 6.01l1.27-1.27a2 
+               2 0 0 1 2.11-.45 12.05 12.05 0 0 0 2.57.57A2 
+               2 0 0 1 22 16.92z"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Navigation Dots -->
+      <div class="slide-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+    </section>
+
+    <!-- Hero section end -->
+
+    <!-- Services Section (About Us) -->
+    <section class="ftco-section services-section">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <!-- Image Section (Left) -->
+          <div class="col-md-6">
+            <img
+              src="images/intro1_11zon.png"
+              alt="About Us Image"
+              class="img-fluid custom-img rounded"
+            />
+          </div>
+
+          <!-- Text Section (Right) -->
+          <div class="col-md-6 heading-section pl-md-5 ftco-animate">
+            <div class="w-100">
+              <span class="subheading">About Us</span>
+              <h2 class="mb-4">
+                Discover the Best Tour Packages Tailored to Your Budget!
+              </h2>
+              <p>
+                We craft unforgettable travel experiences tailored to your
+                budget with exceptional service and global coverage. From exotic
+                escapes to cultural adventures, your dream journey starts here!
+              </p>
+              <p>
+                Whether you're seeking luxury, adventure, or a peaceful getaway,
+                our expert team ensures every detail is handled. Discover new
+                destinations, connect with cultures, and create memories that
+                last a lifetime.
+              </p>
+
+              <p>
+                <a href="about.html" class="btn btn-primary py-3 px-4"
+                  >Know more</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ✅ Owl Carousel CSS (place in <head>) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- SERVICES SECTION START -->
+    <section
+      class="ftco-section services-section"
+      style="
+        background-image: url('images/servicebg4.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 400px;
+      "
+    >
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <span class="subheading">Our Services</span>
+            <h2 class="mb-4">Explore Our Offerings</h2>
+            <p>
+              We provide a variety of services tailored to make your travel
+              seamless and memorable.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 text-center d-flex ftco-animate mb-5">
+            <div class="service3 shadow">
+              <span class="icon"><i class="fas fa-plane-departure"></i></span>
+              <div class="desc">
+                <h3>Flight Bookings</h3>
+                <p>
+                  Best deals on domestic & international flights with top
+                  airline partners.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center d-flex ftco-animate mb-5">
+            <div class="service3 shadow">
+              <span class="icon"><i class="fas fa-hotel"></i></span>
+              <div class="desc">
+                <h3>Hotel Reservations</h3>
+                <p>
+                  Handpicked stays ranging from budget to luxury across the
+                  globe.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center d-flex ftco-animate mb-5">
+            <div class="service3 shadow">
+              <span class="icon"><i class="fas fa-route"></i></span>
+              <div class="desc">
+                <h3>Custom Tour Packages</h3>
+                <p>
+                  Plan your dream holiday with our customizable tour packages.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4 justify-content-center">
+          <a href="services.html" 
+            style="background-color: teal; color: white; padding: 6px 10px; font-size: 14px; text-decoration: none; border-radius: 4px; font-weight: 500; border-radius: 20px;  display: inline-block; width: 140px; text-align: center;">
+            View All Services
+          </a>
+        </div>
+
+
+    </section>
+    <!-- SERVICES SECTION END -->
+
+    <!-- ✅ Destination Section -->
+    <section
+      class="ftco-section img ftco-select-destination"
+      style="
+        background-image: url(images/bg_3.jpg);
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-bottom: 60px;
+        padding: 50px 20px;
+      "
+    >
+      <div class="container">
+        <div class="row justify-content-center pb-4">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+            <span class="subheading">WE Provide Places</span>
+            <h2 class="mb-4">Select Your Destination</h2>
+          </div>
+        </div>
+
+        <div class="carousel-destination owl-carousel">
+          <div class="item">
+            <div class="project-destination">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/dubai.jpg)"
+              >
+                <div class="text">
+                  <h3>DUBAI</h3>
+                  <span>10+ Cities</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="project-destination">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/singapore.jpg)"
+              >
+                <div class="text">
+                  <h3>SINGAPORE</h3>
+                  <span>10+ Cities</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="project-destination">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/malaysia.jpg)"
+              >
+                <div class="text">
+                  <h3>MALAYSIA</h3>
+                  <span>10+ Cities</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="project-destination">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/georgia.jpg)"
+              >
+                <div class="text">
+                  <h3>GEORGIA</h3>
+                  <span>10+ Cities</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="destination.html" class="btn btn-primary"
+            >View All Destinations
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Safari -->
+
+    <section class="ftco-section ftco-about ftco-no-pt img">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-md-12 about-intro">
+            <div class="row">
+              <div class="col-md-6 d-flex align-items-stretch">
+                <div
+                  class="img d-flex w-100 align-items-center justify-content-center"
+                  style="
+                    background-image: url(images/about3.jpg);
+                    height: 600px;
+                  "
+                ></div>
+              </div>
+              <div class="col-md-6 pl-md-5 pt-3" style="margin-top: -20px">
+                <div class="row justify-content-start pb-3">
+                  <div class="col-md-12 heading-section ftco-animate">
+                    <span class="subheading">Why Choose Safari Travels</span>
+                    <h2 class="mb-4">Travel Safely, Remember Forever</h2>
+                    <p>
+                      At our travel agency, we create personalized trips that
+                      bring your dream journeys to life. From hidden gems to top
+                      destinations, we offer unforgettable experiences at the
+                      best prices. Enjoy luxury and comfort without overspending
+                      — all backed by 24/7 support for a worry-free trip. Join
+                      thousands of happy travelers who trust us to make every
+                      adventure smooth, memorable, and special. We handle every
+                      detail, so you can focus on enjoying the journey. Start
+                      your next adventure with us — the world is waiting! No
+                      matter where you want to go, we’ll get you there with
+                      care, style, and unforgettable memories. Because with us,
+                      travel isn’t just a trip — it’s a story worth telling.
+                    </p>
+                    <p>
+                      <a href="contact.html" class="btn btn-primary"
+                        >Book Your Destination</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL start -->
+
+    <section
+      class="ftco-section testimony-section bg-bottom"
+      style="background-image: url(images/testbg.jpg)"
+    >
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center pb-4">
+          <div
+            class="col-md-7 text-center heading-section heading-section-white ftco-animate"
+          >
+            <span class="subheading">Testimonial</span>
+            <h2 class="mb-4">Tourist Feedback</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel">
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <p class="star">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </p>
+                    <p class="mb-4">
+                      "Our honeymoon in Almaty, Kazakhstan was absolute bliss,
+                      thanks to AIR IMARAH. Exceptional service!!"
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="user-img"
+                        style="background-image: url(images/user.png)"
+                      ></div>
+                      <div class="pl-3">
+                        <p class="name">Mishab</p>
+                        <span class="position">Business</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <p class="star">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </p>
+                    <p class="mb-4">
+                      "Majestic pyramids, mesmerizing Nile cruise!! Happy
+                      choosing air Emarat for my long-waited Egypt trip. They
+                      delivered exceptional service."
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="user-img"
+                        style="background-image: url(images/user.png)"
+                      ></div>
+                      <div class="pl-3">
+                        <p class="name">Jareed</p>
+                        <span class="position">Business</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <p class="star">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </p>
+                    <p class="mb-4">
+                      "So happy that I chose Air Imarah for my honeymoon trip to
+                      Bali, Indonesia. From sea beaches to vibrant cultures, our
+                      itinerary was great!"
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="user-img"
+                        style="background-image: url(images/user.png)"
+                      ></div>
+                      <div class="pl-3">
+                        <p class="name">Shabeeb Maloof</p>
+                        <span class="position">Business</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <p class="star">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </p>
+                    <p class="mb-4">
+                      Air imarah demonstrated exceptional expertise in arranging
+                      our company’s business trip to china. From flights to
+                      accommodation, everything was perfect!
+                    </p>
+
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="user-img"
+                        style="background-image: url(images/user.png)"
+                      ></div>
+                      <div class="pl-3">
+                        <p class="name">Nayif Muhammed</p>
+                        <span class="position">Business</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <p class="star">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </p>
+                    <p class="mb-4">
+                      5 days Kashmir trip with AIR IMARA was flawless!! From
+                      shikara rides to Gulmarg skies, they tailored our
+                      itinerary perfectly.
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <div
+                        class="user-img"
+                        style="background-image: url(images/user.png)"
+                      ></div>
+                      <div class="pl-3">
+                        <p class="name">Muhammed Uvais</p>
+                        <span class="position">Business</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TESTIMONIAL end -->
+
+    <!-- FOOTER start-->
+    <footer
+      class="ftco-footer bg-bottom ftco-no-pt"
+      style="background-image: url(images/bg_3.jpg)"
+    >
+      <div id="footer" class="section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md pt-5">
+              <div
+                class="ftco-footer-widget pt-md-5 mb-4 text-center text-md-left"
+              >
+                <a href="index.html" class="footer-logo d-block mb-3">
+                  <img
+                    src="images/logofooter.png"
+                    alt="Airimarah Logo"
+                    style="width: 200px"
+                  />
+                </a>
+                <h2 class="ftco-heading-2">About</h2>
+
+                <p>
+                  We turn your travel dreams into reality with personalized and
+                  hassle-free experiences. From exotic getaways to thrilling
+                  adventures, we create unforgettable journeys just for you.
+                </p>
+
+                <ul
+                  class="ftco-footer-social list-unstyled float-md-left float-lft"
+                >
+                  <li class="ftco-animate">
+                    <a href="https://www.facebook.com/airimarah">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="ftco-animate">
+                    <a href="https://www.instagram.com/airimarah/">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="ftco-animate"></li>
+                  <li class="ftco-animate">
+                    <a
+                      href="https://ae.linkedin.com/in/air-imarah-tourism-llc-74a6b7369"
+                      target="_blank"
+                    >
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md pt-5 border-left">
+              <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
+                <h2 class="ftco-heading-2">Information</h2>
+                <ul class="list-unstyled">
+                  <li><a href="/" class="py-2 d-block">Home</a></li>
+                  <li><a href="about.html" class="py-2 d-block">About</a></li>
+                  <li>
+                    <a href="destination.html" class="py-2 d-block"
+                      >Destination</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services.html" class="py-2 d-block">Services</a>
+                  </li>
+                  <li>
+                    <a href="contact.html" class="py-2 d-block">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md pt-5 border-left">
+              <div class="ftco-footer-widget pt-md-5 mb-4">
+                <h2 class="ftco-heading-2">Experience</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="py-2 d-block">Adventure</a></li>
+                  <li><a href="#" class="py-2 d-block">Beach</a></li>
+                  <li><a href="#" class="py-2 d-block">Nature</a></li>
+                  <li><a href="#" class="py-2 d-block">Camping</a></li>
+                  <li><a href="#" class="py-2 d-block">Party</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md pt-5 border-left">
+              <div class="ftco-footer-widget pt-md-5 mb-4">
+                <h2 class="ftco-heading-2">Location</h2>
+                <div class="block-23 mb-3">
+                  <ul>
+                    <li>
+                      <span class="icon fas fa-map-marker-alt"></span>
+                      <span class="text"
+                        >Office : M102 E,<br />Fast Business Building AL Qusais
+                        2,<br />Near Al Tawar Center Dubai</span
+                      >
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon fas fa-phone"></span>
+                        <span class="text">050 33 037 71</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://wa.me/971503303771">
+                        <span
+                          class="icon fab fa-whatsapp"
+                          style="color: #25d366"
+                        ></span>
+                        <span class="text">0503303771</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="mailto:airimarahtourismllc@gmail.com">
+                        <span class="icon fas fa-envelope"></span>
+                        <span class="text"
+                          >airimarahtourismllc<br />@gmail.com</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved Airimarah | Powered by
+                <a
+                  href="https://aionespark.com"
+                  target="_blank"
+                  style="color: rgba(0, 0, 0, 0.7); text-decoration: underline"
+                >
+                  Aione Spark TechHive LLP
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Loader (Optional) -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
+    </div>
+    <a
+      href="https://wa.me/971503303771"
+      class="whatsapp-float"
+      target="_blank"
+      title="Chat on WhatsApp"
+    >
+      <img src="images/whatsap.png" alt="WhatsApp" class="whatsapp-icon" />
+    </a>
+  </body>
+
+  <!-- Bootstrap JS (Bundle includes Popper.js) -->
+  <!-- ✅ Load jQuery FIRST -->
+  <script src="js/jquery.min.js"></script>
+
+  <!-- ✅ Now load the rest -->
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <script type="module" src="js/flight.js"></script>
+
+  <!-- ✅ AOS scroll animations -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- ✅ Your custom hero section + plane logic -->
+  <script>
+    const menuBtn = document.querySelector(".menu-btn");
+    const nav = document.querySelector("header .navigation");
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content-slide");
+    const plane = document.querySelector(".plane");
+    const jetLine = document.querySelector(".jet-line");
+
+    let currentSlide = 0;
+
+    const sliderNav = (index) => {
+      btns.forEach((btn) => btn.classList.remove("active"));
+      slides.forEach((slide) => slide.classList.remove("active"));
+      contents.forEach((content) => content.classList.remove("active"));
+
+      btns[index].classList.add("active");
+      slides[index].classList.add("active");
+      contents[index].classList.add("active");
+
+      currentSlide = index;
+    };
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+
+    function triggerPlaneAndSlide() {
+      jetLine.style.opacity = "1";
+      jetLine.style.width = "200px";
+      plane.style.transform = "translateX(120px)";
+
+      setTimeout(() => {
+        plane.style.transform = "translateX(0)";
+        jetLine.style.width = "0";
+        jetLine.style.opacity = "0";
+      }, 800);
+
+      const next = (currentSlide + 1) % slides.length;
+      sliderNav(next);
+    }
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      nav.classList.toggle("active");
+    });
+
+    // === Swipe Support ===
+    const homeSection = document.querySelector(".home");
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    homeSection.addEventListener("touchstart", (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    });
+
+    homeSection.addEventListener("touchend", (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipeGesture();
+    });
+
+    function handleSwipeGesture() {
+      const swipeDistance = touchEndX - touchStartX;
+      const minSwipeDistance = 50;
+
+      if (Math.abs(swipeDistance) > minSwipeDistance) {
+        if (swipeDistance < 0) {
+          const next = (currentSlide + 1) % slides.length;
+          sliderNav(next);
+        } else {
+          const prev = (currentSlide - 1 + slides.length) % slides.length;
+          sliderNav(prev);
+        }
+      }
+    }
+
+    document.addEventListener("click", (e) => {
+      const isClickInsideNav = nav.contains(e.target);
+      const isClickOnMenuBtn = menuBtn.contains(e.target);
+
+      if (
+        nav.classList.contains("active") &&
+        !isClickInsideNav &&
+        !isClickOnMenuBtn
+      ) {
+        nav.classList.remove("active");
+        menuBtn.classList.remove("active");
+      }
+    });
+  </script>
+</html>

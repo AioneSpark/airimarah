@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airimarah Travels</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="icon" href="images/logofooter.png" type="image/png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Updated Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      @media (max-width: 767px) {
+        .navbar-brand img {
+          width: 70px !important;
+        }
+      }
+
+      @keyframes flyAnimationDesktop {
+        0% {
+          transform: translate(-300px, 50px) rotate(-10deg);
+          opacity: 0;
+        }
+        20% {
+          opacity: 1;
+        }
+        100% {
+          transform: translate(100vw, -100vh) rotate(-5deg);
+          opacity: 1;
+        }
+      }
+
+      @keyframes flyAnimationMobile {
+        0% {
+          transform: translate(-300px, 100px) rotate(-15deg);
+          opacity: 0;
+        }
+        20% {
+          opacity: 1;
+        }
+        100% {
+          transform: translate(100vw, -70vh) rotate(-10deg);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Transparent Header -->
+    <header
+      class="position-absolute top-0 start-0 w-100 z-3 py-3 px-4 d-flex justify-content-between align-items-center"
+      style="background: rgba(0, 0, 0, 0.01)"
+    >
+      <!-- Logo + Location -->
+      <div class="d-flex align-items-center gap-1 me-5">
+        <a href="#" class="brand">
+          <img
+            src="images/logo.png"
+            alt="Brand Logo"
+            style="height: 60px; width: auto"
+          />
+        </a>
+        <div class="header-location text-white small">
+          <strong>Air Imarah Tourism LLC</strong><br />
+          Dubai | India
+        </div>
+      </div>
+    </header>
+
+
+
+    <section
+      class="hero-wrap hero-wrap-2 d-flex align-items-center justify-content-center text-center"
+      style="
+        background-image: url('images/hero3.jpg');
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      "
+    >
+      <div
+        class="overlay"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
+      ></div>
+
+      <div class="container position-relative">
+        <div class="row justify-content-center">
+          <div class="col-md-9 ftco-animate">
+            <p class="breadcrumbs">
+              <span class="mr-2"
+                ><a href="index.html" class="text-white"
+                  >Home <i class="fa fa-chevron-right"></i></a
+              ></span>
+              <span class="text-danger"
+                >Destination <i class="fa fa-chevron-right"></i
+              ></span>
+            </p>
+            <h1 class="mb-0 bread text-white" style="font-weight: 800; font-size: 50px;">Top Destinations</h1> 
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Flight Image with Animation -->
+    </section>
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/umrah.jpg)"
+              >
+                <!-- <span class="price">Asia</span> -->
+              </a>
+              <div class="text p-4">
+                <span class="days">Umrah</span>
+                <h3><a href="#">Umrah</a></h3>
+                <!-- <p class="location">
+                  <span class="fa fa-map-marker"></span> Petronas Twin Towers,
+                  Batu Caves, Penang, and Langkawi
+                </p> -->
+                <ul>
+                  <li><span class="flaticon-shower"></span></li>
+                  <li><span class="flaticon-king-size"></span></li>
+                  <li><span class="flaticon-sun-umbrella"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/dubai.jpg)"
+              >
+              </a>
+              <div class="text p-4">
+                <span class="days">Dubai</span>
+                <h3><a href="#"></a>Dubai</h3>
+                <!-- <p class="location">
+                  <span class="fa fa-map-marker"></span> Bangkok, Phuket, Chiang
+                  Mai, Pattaya, Koh Samui
+                </p> -->
+                <ul>
+                  <li><span class="flaticon-shower"></span></li>
+                  <li><span class="flaticon-king-size"></span></li>
+                  <li><span class="flaticon-sun-umbrella"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/malaysia.jpg)"
+              >
+                <!-- <span class="price">Europe </span> -->
+              </a>
+              <div class="text p-4">
+                <span class="days">Malaysia</span>
+                <h3><a href="#">Malaysia</a></h3>
+                <!-- <p class="location">
+                  <span class="fa fa-map-marker"></span> cities, lakes,
+                  mountains, and valleys
+                </p> -->
+                <ul>
+                  <li><span class="flaticon-shower"></span></li>
+                  <li><span class="flaticon-king-size"></span></li>
+                  <li><span class="flaticon-sun-umbrella"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/singapore.jpg)"
+              >
+                <!-- <span class="price">Asia</span> -->
+              </a>
+              <div class="text p-4">
+                <span class="days">Singapore</span>
+                <h3><a href="#">Singapore</a></h3>
+                <!-- <p class="location">
+                  <span class="fa fa-map-marker"></span> Gardens by the Bay,
+                  Marina Bay Sands, Universal Studios
+                </p> -->
+                <ul>
+                  <li><span class="flaticon-shower"></span></li>
+                  <li><span class="flaticon-king-size"></span></li>
+                  <li><span class="flaticon-sun-umbrella"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+                    <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/tailand.jpg)"
+              >
+                <!-- <span class="price">Africa</span> -->
+              </a>
+              <div class="text p-4">
+                <span class="days">Thailand </span>
+                <h3><a href="#">Thailand</a></h3>
+                <!-- <p class="location">
+                  <span class="fa fa-map-marker"></span> national parks,
+                  beaches, and wildlife sanctuaries
+                </p> -->
+                <ul>
+                  <li><span class="flaticon-shower"></span></li>
+                  <li><span class="flaticon-king-size"></span></li>
+                  <li><span class="flaticon-sun-umbrella"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/maldives.jpg)"
+              >
+                <!-- <span class="price">Africa</span> -->
+              </a>
+              <div class="text p-4">
+                <span class="days">Maldives</span>
+                <h3><a href="#">Maldives</a></h3>
+                <!-- <p class="location">
+                  <span class="fa fa-map-marker"></span> Camps Bay
+                  Beach,Maclear's Beacon, Addo Elephant National Park
+                </p> -->
+                <ul>
+                  <li><span class="flaticon-shower"></span></li>
+                  <li><span class="flaticon-king-size"></span></li>
+                  <li><span class="flaticon-sun-umbrella"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/azerbaijan.jpg)"
+              >
+                <!-- <span class="price">Asia</span> -->
+              </a>
+              <div class="text p-4">
+                <span class="days">Azerbaijan</span>
+                <h3><a href="#">Azerbaijan</a></h3>
+                <!-- <p class="location">
+                  <span class="fa fa-map-marker"></span> Boracay, Palawan, Cebu,
+                  and Siargao
+                </p> -->
+                <ul>
+                  <li><span class="flaticon-shower"></span></li>
+                  <li><span class="flaticon-king-size"></span></li>
+                  <li><span class="flaticon-sun-umbrella"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/kazakhstan.jpg)"
+              >
+                <!-- <span class="price">Europe</span> -->
+              </a>
+              <div class="text p-4">
+                <span class="days">Kazakhstan</span>
+                <h3><a href="#">Kazakhstan</a></h3>
+                <!-- <p class="location">
+                  <span class="fa fa-map-marker"></span> Banaue, Ifugao,
+                  Philippines
+                </p> -->
+                <ul>
+                  <li><span class="flaticon-shower"></span></li>
+                  <li><span class="flaticon-king-size"></span></li>
+                  <li><span class="flaticon-sun-umbrella"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/armenia.jpg)"
+              >
+                <!-- <span class="price">Europe</span> -->
+              </a>
+              <div class="text p-4">
+                <span class="days">Armenia</span>
+                <h3><a href="#">Armenia</a></h3>
+                <!-- <p class="location">
+                  <span class="fa fa-map-marker"></span> Paris, the Eiffel
+                  Tower, the Louvre Museum
+                </p> -->
+                <ul>
+                  <li><span class="flaticon-shower"></span></li>
+                  <li><span class="flaticon-king-size"></span></li>
+                  <li><span class="flaticon-sun-umbrella"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/uzbkstan.jpg)"
+              >
+              </a>
+              <div class="text p-4">
+                <span class="days">Uzbkstan </span>
+                <h3><a href="#">Uzbkstan</a></h3>
+                <!-- <p class="location">
+                  <span class="fa fa-map-marker"></span> national parks,
+                  islands, beaches, and Mount Kilimanjaro
+                </p> -->
+                <ul>
+                  <li><span class="flaticon-shower"></span></li>
+                  <li><span class="flaticon-king-size"></span></li>
+                  <li><span class="flaticon-sun-umbrella"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/egypt.jpg)"
+              >
+                <!-- <span class="price">America</span> -->
+              </a>
+              <div class="text p-4">
+                <span class="days">Egypt</span>
+                <h3><a href="#">Egypt</a></h3>
+                <!-- <p class="location">
+                  <span class="fa fa-map-marker"></span> national parks, iconic
+                  buildings
+                </p> -->
+                <ul>
+                  <li><span class="flaticon-shower"></span></li>
+                  <li><span class="flaticon-king-size"></span></li>
+                  <li><span class="flaticon-sun-umbrella"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-md-4 ftco-animate">
+            <div class="project-wrap">
+              <a
+                href="#"
+                class="img"
+                style="background-image: url(images/georgia.jpg)"
+              >
+                <!-- <span class="price">Europe</span> -->
+              </a>
+              <div class="text p-4">
+                <span class="days">Georgia</span>
+                <h3><a href="#">Georgia</a></h3>
+                <!-- <p class="location">
+                  <span class="fa fa-map-marker"></span> historic sites,
+                  museums, and cities
+                </p> -->
+                <ul>
+                  <li><span class="flaticon-shower"></span></li>
+                  <li><span class="flaticon-king-size"></span></li>
+                  <li><span class="flaticon-sun-umbrella"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+    </section>
+
+    <section class="ftco-intro ftco-section ftco-no-pt">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 text-center">
+            <div class="img" style="background-image: url(images/bg_2.jpg)">
+              <div class="overlay"></div>
+              <h2>Your dream journey starts here  </h2>
+              <p>
+                  Your travel dream-makers. Let the River Duden guide you to unforgettable escapes."
+              </p>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ <!-- FOOTER start-->
+    <footer
+      class="ftco-footer bg-bottom ftco-no-pt"
+      style="background-image: url(images/bg_3.jpg)"
+    >
+      <div id="footer" class="section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md pt-5">
+              <div
+                class="ftco-footer-widget pt-md-5 mb-4 text-center text-md-left"
+              >
+                <a href="index.html" class="footer-logo d-block mb-3">
+                  <img
+                    src="images/logofooter.png"
+                    alt="Airimarah Logo"
+                    style="width: 200px"
+                  />
+                </a>
+                <h2 class="ftco-heading-2">About</h2>
+
+                <p>
+                  We turn your travel dreams into reality with personalized and
+                  hassle-free experiences. From exotic getaways to thrilling
+                  adventures, we create unforgettable journeys just for you.
+                </p>
+
+                <ul
+                  class="ftco-footer-social list-unstyled float-md-left float-lft"
+                >
+                  <li class="ftco-animate">
+                    <a href="https://www.facebook.com/airimarah">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li class="ftco-animate">
+                    <a href="https://www.instagram.com/airimarah/">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="ftco-animate">
+                    <a href="https://ae.linkedin.com/in/air-imarah-tourism-llc-74a6b7369" target="_blank">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md pt-5 border-left">
+              <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
+                <h2 class="ftco-heading-2">Information</h2>
+                <ul class="list-unstyled">
+                  <li><a href="/" class="py-2 d-block">Home</a></li>
+                  <li><a href="about.html" class="py-2 d-block">About</a></li>
+                  <li>
+                    <a href="destination.html" class="py-2 d-block"
+                      >Destination</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services.html" class="py-2 d-block">Services</a>
+                  </li>
+                  <li>
+                    <a href="contact.html" class="py-2 d-block">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md pt-5 border-left">
+              <div class="ftco-footer-widget pt-md-5 mb-4">
+                <h2 class="ftco-heading-2">Experience</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="py-2 d-block">Adventure</a></li>
+                  <li><a href="#" class="py-2 d-block">Beach</a></li>
+                  <li><a href="#" class="py-2 d-block">Nature</a></li>
+                  <li><a href="#" class="py-2 d-block">Camping</a></li>
+                  <li><a href="#" class="py-2 d-block">Party</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md pt-5 border-left">
+              <div class="ftco-footer-widget pt-md-5 mb-4">
+                <h2 class="ftco-heading-2">Location</h2>
+                <div class="block-23 mb-3">
+                  <ul>
+                    <li>
+                      <span class="icon fas fa-map-marker-alt"></span>
+                      <span class="text"
+                        >Office : M102 E,<br />Fast Business Building AL Qusais
+                        2,<br />Near Al Tawar Center Dubai</span
+                      >
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="icon fas fa-phone"></span>
+                        <span class="text">050 33 037 71</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://wa.me/971503303771">
+                        <span
+                          class="icon fab fa-whatsapp"
+                          style="color: #25d366"
+                        ></span>
+                        <span class="text">0503303771</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="mailto:airimarahtourismllc@gmail.com">
+                        <span class="icon fas fa-envelope"></span>
+                        <span class="text"
+                          >airimarahtourismllc<br />@gmail.com</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                  All rights reserved Airimarah | Powered by 
+                  <a href="https://aionespark.com" target="_blank" style="color: rgba(0, 0, 0, 0.7); text-decoration: underline;">
+                    Aione Spark TechHive LLP
+                  </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+        <a
+      href="https://wa.me/971503303771"
+      class="whatsapp-float"
+      target="_blank"
+      title="Chat on WhatsApp"
+    >
+      <img src="images/whatsap.png" alt="WhatsApp" class="whatsapp-icon" />
+    </a>
+<script>
+  const menuBtn = document.querySelector(".menu-btn");
+  const navigation = document.querySelector(".navigation");
+  const navLinks = document.querySelectorAll(".navigation a");
+
+  menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("active");
+    navigation.classList.toggle("active");
+  });
+
+  // ✅ Close menu when a link is clicked
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      menuBtn.classList.remove("active");
+      navigation.classList.remove("active");
+    });
+  });
+
+  // ✅ Close menu when clicking outside
+  document.addEventListener("click", function (e) {
+    const isClickInside = navigation.contains(e.target) || menuBtn.contains(e.target);
+
+    if (!isClickInside) {
+      menuBtn.classList.remove("active");
+      navigation.classList.remove("active");
+    }
+  });
+</script>
+
+  </body>
+</html>
