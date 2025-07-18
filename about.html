@@ -31,6 +31,336 @@
   
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/style.css">
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #19b2b8;
+    --secondary: #3a889e;
+    --accent: #298191;
+    --dark: #1a1a2e;
+    --light: #f0faff;
+    --glass: rgba(255, 255, 255, 0.15);
+    --glass-border: rgba(255, 255, 255, 0.25);
+    --text-primary: #1e3a5f;
+    --text-secondary: #5f9ea0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    overflow-x: hidden;
+    background: var(--light);
+}
+
+.main-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a95a5 0%, #0d9397 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.main-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(120, 205, 255, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 40% 80%, rgba(135, 206, 250, 0.3) 0%, transparent 50%);
+    animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    padding: 80px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #f2f4f5 0%, rgb(227, 235, 236) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+    animation: slideDown 1s ease-out;
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: slideDown 1s ease-out 0.3s both;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.glass-card {
+    background: var(--glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: slideUp 0.8s ease-out both;
+}
+
+.glass-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.glass-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(54, 54, 110, 0.1) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.glass-card:hover::before {
+    opacity: 1;
+}
+
+.glass-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 40px 80px rgba(165, 163, 182, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    position: relative;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-icon i {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.card-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #274685;
+    margin-bottom: 25px;
+    letter-spacing: -0.01em;
+    text-shadow: 0 2px 10px rgba(86, 20, 194, 0.1);
+}
+
+.card-content {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
+    font-weight: 400;
+    text-shadow: 0 1px 3px rgba(36, 75, 160, 0.1);
+}
+
+.floating-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.floating-element {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    animation: floatElement 6s ease-in-out infinite;
+}
+
+.floating-element:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.floating-element:nth-child(2) {
+    width: 80px;
+    height: 80px;
+    top: 70%;
+    right: 10%;
+    animation-delay: 2s;
+}
+
+.floating-element:nth-child(3) {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    right: 20%;
+    animation-delay: 4s;
+}
+
+@keyframes floatElement {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg); 
+        opacity: 0.6;
+    }
+    50% { 
+        transform: translateY(-30px) rotate(180deg); 
+        opacity: 0.8;
+    }
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #228697, #a1e3f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .glass-card {
+        padding: 30px;
+    }
+    .card-title {
+        font-size: 2rem;
+    }
+    .content-wrapper {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    .glass-card {
+        padding: 25px;
+    }
+    .card-title {
+        font-size: 1.75rem;
+    }
+    .card-content {
+        font-size: 1rem;
+    }
+}
+
+/* Shimmer effect */
+.glass-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: rotate(45deg);
+    transition: all 0.6s ease;
+    opacity: 0;
+}
+
+.glass-card:hover::after {
+    animation: shimmer 1.5s ease-in-out;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); opacity: 0; }
+}
+
+/* Scroll reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+  </style>
+  
 </head>
 <body>
   
@@ -194,7 +524,136 @@
       </div>
     </div>
   </div>
-  
+   
+<div class="main-container">
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h1 class="section-title">Mission & Vision</h1>
+                    <p class="section-subtitle">Defining our purpose and guiding our journey towards transformative travel experiences</p>
+                </div>
+
+                <!-- Cards Container -->
+                <div class="cards-container">
+                    <!-- Mission Card -->
+                    <div class="glass-card reveal">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h2 class="card-title gradient-text">Our Mission</h2>
+                        <div class="card-content">
+                          Our mission is to simplify and enhance every stage of the travel experience by offering expert 
+                          visa assistance, reliable transport and transfers, curated tour packages, group and corporate 
+                          travel planning, and comprehensive services like hotel booking, ticketing, visa stamping, and 
+                          medical registration. We strive to be a one-stop travel partner committed to customer 
+                          satisfaction, efficiency, and personalized service.
+                        </div>
+                    </div>
+
+                    <!-- Vision Card -->
+                    <div class="glass-card reveal">
+                        <div class="card-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h2 class="card-title gradient-text">Our Vision</h2>
+                        <div class="card-content">
+                            To become a trusted global leader in travel services by blending innovation with hospitality,
+                             ensuring every client enjoys a smooth, stress-free journey. We envision a future where travel 
+                             is not only accessible and efficient but also empowering—connecting people to cultures, 
+                             opportunities, and meaningful memories.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth reveal animation on scroll
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            reveals.forEach(reveal => {
+                const windowHeight = window.innerHeight;
+                const elementTop = reveal.getBoundingClientRect().top;
+                const revealPoint = 150;
+                
+                if (elementTop < windowHeight - revealPoint) {
+                    reveal.classList.add('active');
+                }
+            });
+        }
+
+        // Parallax effect for floating elements
+        function parallaxElements() {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.floating-element');
+            
+            parallaxElements.forEach((element, index) => {
+                const speed = (index + 1) * 0.2;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        }
+
+        // Mouse movement parallax effect
+        function mouseMoveParallax(e) {
+            const cards = document.querySelectorAll('.glass-card');
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+            
+            cards.forEach((card, index) => {
+                const rect = card.getBoundingClientRect();
+                const cardX = rect.left + rect.width / 2;
+                const cardY = rect.top + rect.height / 2;
+                
+                const angleX = (mouseY - cardY) / 30;
+                const angleY = (cardX - mouseX) / 30;
+                
+                card.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg)`;
+            });
+        }
+
+        // Reset card rotation when mouse leaves
+        function resetCardRotation() {
+            const cards = document.querySelectorAll('.glass-card');
+            cards.forEach(card => {
+                card.style.transform = 'rotateX(0deg) rotateY(0deg)';
+            });
+        }
+
+        // Event listeners
+        window.addEventListener('scroll', () => {
+            revealOnScroll();
+            parallaxElements();
+        });
+
+        document.addEventListener('mousemove', mouseMoveParallax);
+        document.addEventListener('mouseleave', resetCardRotation);
+
+        // Initialize reveal animation
+        window.addEventListener('load', revealOnScroll);
+
+        // Add interactive hover effects
+        const cards = document.querySelectorAll('.glass-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-15px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
 </section>
 
 
@@ -435,7 +894,7 @@
               <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
                 <h2 class="ftco-heading-2">Information</h2>
                 <ul class="list-unstyled">
-                  <li><a href="/" class="py-2 d-block">Home</a></li>
+                  <li><a href="index.html" class="py-2 d-block">Home</a></li>
                   <li><a href="about.html" class="py-2 d-block">About</a></li>
                   <li>
                     <a href="destination.html" class="py-2 d-block"
