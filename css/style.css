@@ -14039,3 +14039,9 @@ section {
     height: 60px !important; /* or any size you prefer */
   }
 }
+  #video-preloader video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
