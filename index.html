@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -57,9 +58,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+
   </head>
 
+
+
   <body>
+  <!-- 🔽 Preloader Video Section -->
+  <div id="video-preloader" style="position: fixed; inset: 0; z-index: 9999; background: black;">
+    <video id="introVideo" autoplay muted playsinline>
+      <source src="videos/intro.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+
     <!-- Hero section start -->
 
     <!-- Transparent Header -->
@@ -718,7 +730,7 @@
               <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
                 <h2 class="ftco-heading-2">Information</h2>
                 <ul class="list-unstyled">
-                  <li><a href="/" class="py-2 d-block">Home</a></li>
+                  <li><a href="index.html" class="py-2 d-block">Home</a></li>
                   <li><a href="about.html" class="py-2 d-block">About</a></li>
                   <li>
                     <a href="destination.html" class="py-2 d-block"
@@ -965,4 +977,26 @@
       }
     });
   </script>
+  <script>
+  const introVideo = document.getElementById("introVideo");
+  const videoPreloader = document.getElementById("video-preloader");
+
+  introVideo.onended = () => {
+    videoPreloader.style.opacity = 0;
+    setTimeout(() => {
+      videoPreloader.style.display = "none";
+    }, 500);
+  };
+
+  // Optional fallback in case video doesn't load
+  setTimeout(() => {
+    if (videoPreloader.style.display !== "none") {
+      videoPreloader.style.opacity = 0;
+      setTimeout(() => {
+        videoPreloader.style.display = "none";
+      }, 500);
+    }
+  }, 10000);
+</script>
+
 </html>
